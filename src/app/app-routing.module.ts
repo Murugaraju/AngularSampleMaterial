@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CustomerListComponent } from './customers/customer-list/customer-list.component';
 import { OrderListComponent } from './orders/order-list/order-list.component';
 import { MessageListComponent } from './messages/message-list/message-list.component';
+import { MessageNewComponent } from './messages/message-new/message-new.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,11 @@ const routes: Routes = [
     path:'messages',
     // loadChildren:'./messages/messages.module#MessagesModule',
     component:MessageListComponent
+  },
+  {
+    path:'messages/new',
+    // loadChildren:'./messages/messages.module#MessagesModule',
+    component:MessageNewComponent
   },
   {
     path:'',
