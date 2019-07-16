@@ -1,14 +1,7 @@
-.sample{
-    max-width: 544px;
-    border: 1px solid #673ab7;
-    padding: 60px;
+.mat-horizontal-stepper{
+    
     margin: auto;
 }
-.mat-form-field-infix {
-    display: block;
-    position: relative;
-    flex: auto;
-    min-width: 0;
-    /* width: 180px; */
-    width: 234px;
+.mat-horizontal-stepper .full-width{
+    width:100%
 }

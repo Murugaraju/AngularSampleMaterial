@@ -4,13 +4,18 @@ import { CustomerListComponent } from './customers/customer-list/customer-list.c
 import { OrderListComponent } from './orders/order-list/order-list.component';
 import { MessageListComponent } from './messages/message-list/message-list.component';
 import { MessageNewComponent } from './messages/message-new/message-new.component';
-
+import {CustomerNewComponent} from './customers/customer-new/customer-new.component';
 
 const routes: Routes = [
   {
     path:'customers',
     // loadChildren:'./customers/customers.module#CustormersModule',
     component:CustomerListComponent
+  },
+  {
+    path:'customers/new',
+    // loadChildren:'./customers/customers.module#CustormersModule',
+    component:CustomerNewComponent
   },
   {
     path:'orders',

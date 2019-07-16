@@ -29,11 +29,13 @@ export class MessageNewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.firstFormGroup= new FormGroup(
+    this.firstFormGroup = new FormGroup(
       {emailCtrl:new FormControl(),
-        priorityCtrl:new FormControl()}
+        priorityCtrl:new FormControl(),
+        departmentCtrl:new FormControl(),}
+    
     );
-    this.secondFormGroup= new FormGroup(
+     this.secondFormGroup = new FormGroup(
       {messageCtrl:new FormControl()}
     );
   }

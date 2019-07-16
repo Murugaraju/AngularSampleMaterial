@@ -1,6 +1,27 @@
+# ToDo
+1.MatStepper styling
+2.Have google's MaterialIcon local setup
+3.Adding space between inline mat-form-field
 # MaterialMaster
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+
+This is having below material topics covered
+Lesson 01: Sidenavs
+Lesson 02: App bars
+Lesson 03: Menus
+Lesson 04: Tabs
+Lesson 05: Cards
+Lesson 06: Steppers
+Lesson 07: Autocomplete
+Lesson 08: Inputs
+Lesson 09: Date picker
+Lesson 10: Dialogs
+Lesson 11: Snackbars
+Lesson 12: Tooltips
+Lesson 13: Tables, part 1
+Lesson 14: Tables, part 2
+Lesson 15: Pagination
 
 ## Development server
 

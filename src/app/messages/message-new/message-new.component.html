@@ -1,5 +1,5 @@
 <br>
-<div class="sample">
+
 
         <mat-horizontal-stepper [linear]='true' #stepper>
                 <mat-step [stepControl]="firstFormGroup ">
@@ -8,7 +8,7 @@
                         <ng-template matStepLabel>Enter recipient info</ng-template>
 
                         <!-- <form> -->
-                        <mat-form-field class="mat-form-field-infix" appearance="legacy">
+                        <mat-form-field class="full-width" appearance="legacy">
                             <mat-label>Email</mat-label>
                             <input matInput placeholder="Email"  formControlName='emailCtrl'   required>
                             <mat-hint>enter registered mailid</mat-hint>
@@ -79,4 +79,3 @@
                 </mat-step>
             
             </mat-horizontal-stepper>
-</div>
