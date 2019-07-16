@@ -1,81 +1,86 @@
 <br>
 
-
+<mat-card>
+    <mat-card-content>
+        
         <mat-horizontal-stepper [linear]='true' #stepper>
-                <mat-step [stepControl]="firstFormGroup ">
+            <mat-step [stepControl]="firstFormGroup ">
 
-                    <form [formGroup]="firstFormGroup">
-                        <ng-template matStepLabel>Enter recipient info</ng-template>
+                <form [formGroup]="firstFormGroup">
+                    <ng-template matStepLabel>Enter recipient info</ng-template>
 
-                        <!-- <form> -->
-                        <mat-form-field class="full-width" appearance="legacy">
-                            <mat-label>Email</mat-label>
-                            <input matInput placeholder="Email"  formControlName='emailCtrl'   required>
-                            <mat-hint>enter registered mailid</mat-hint>
-                        </mat-form-field>
-                        <br>
-                         <mat-form-field >
-                                <mat-label>Priority</mat-label>
-                                <input matInput placeholder="Priority"  formControlName='priorityCtrl' [matAutocomplete]="auto"   required>
-                                <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-                                    <mat-option *ngFor="let priority of priorities" [value]="priority">
-                                        {{priority}}
-                                    </mat-option>
-                                </mat-autocomplete>
-                                <!-- <mat-hint>enter registered mailid</mat-hint> -->
-                        </mat-form-field>
-                        <br>
-                         <mat-form-field >
-                                <mat-label>Department</mat-label>
-                                <input matInput placeholder="Department"  formControlName='departmentCtrl' [matAutocomplete]="auto2"   required>
-                                <mat-autocomplete autoActiveFirstOption #auto2="matAutocomplete">
-                                    <mat-option *ngFor="let department of departments" [value]="department.name">
-                                        {{department.name}}
-                                    </mat-option>
-                                </mat-autocomplete>
-                                <!-- <mat-hint>enter registered mailid</mat-hint> -->
-                        </mat-form-field>
-                        
-                        <div>
-                            <button mat-button color="primary" matStepperNext>
-                                <mat-icon>arrow_forward</mat-icon>
-                            </button>
-                        </div>
-                    </form>
-                </mat-step>
-                <mat-step [stepControl]="secondFormGroup ">
-                    <form [formGroup]="secondFormGroup">
-                        <!-- <form> -->
-                        <ng-template matStepLabel>Message</ng-template>
-                        
-                        <mat-form-field appearance="standard">
-                            <mat-label>Message</mat-label>
-                            <input matInput placeholder="Message" formControlName="messageCtrl"  required>
-                        </mat-form-field>
-                        <div>
-                            <button mat-button matStepperPrevious>
-                                <mat-icon>mail_outline</mat-icon>
-                            </button>
-                            <br>
-                            <button mat-button matStepperNext>
-                                <mat-icon>arrow_back</mat-icon>
-                            </button>
-                        </div>
-                    </form>
-                </mat-step>
-                <mat-step [optional]="true">
-                    <ng-template matStepLabel>Preview</ng-template>
-                    <p>Message sent!</p>
+                    <!-- <form> -->
+                    <mat-form-field class="full-width" appearance="legacy">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Email"  formControlName='emailCtrl'   required>
+                        <mat-hint>enter registered mailid</mat-hint>
+                    </mat-form-field>
+                    <br>
+                     <mat-form-field >
+                            <mat-label>Priority</mat-label>
+                            <input matInput placeholder="Priority"  formControlName='priorityCtrl' [matAutocomplete]="auto"   required>
+                            <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                                <mat-option *ngFor="let priority of priorities" [value]="priority">
+                                    {{priority}}
+                                </mat-option>
+                            </mat-autocomplete>
+                            <!-- <mat-hint>enter registered mailid</mat-hint> -->
+                    </mat-form-field>
+                    <br>
+                     <mat-form-field >
+                            <mat-label>Department</mat-label>
+                            <input matInput placeholder="Department"  formControlName='departmentCtrl' [matAutocomplete]="auto2"   required>
+                            <mat-autocomplete autoActiveFirstOption #auto2="matAutocomplete">
+                                <mat-option *ngFor="let department of departments" [value]="department.name">
+                                    {{department.name}}
+                                </mat-option>
+                            </mat-autocomplete>
+                            <!-- <mat-hint>enter registered mailid</mat-hint> -->
+                    </mat-form-field>
+                    
                     <div>
-                        <button mat-button matStepperPrevious>
-                            <mat-icon>arrow_back</mat-icon>
-                        </button>
-                        <br>
-                        <button mat-button (click)="stepper.reset()">
-                            <mat-icon>refresh</mat-icon>
+                        <button mat-button color="primary" matStepperNext>
+                            <mat-icon>arrow_forward</mat-icon>
                         </button>
                     </div>
-            
-                </mat-step>
-            
-            </mat-horizontal-stepper>
+                </form>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup ">
+                <form [formGroup]="secondFormGroup">
+                    <!-- <form> -->
+                    <ng-template matStepLabel>Message</ng-template>
+                    
+                    <mat-form-field appearance="standard">
+                        <mat-label>Message</mat-label>
+                        <input matInput placeholder="Message" formControlName="messageCtrl"  required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperPrevious>
+                            <mat-icon>mail_outline</mat-icon>
+                        </button>
+                        <br>
+                        <button mat-button matStepperNext>
+                            <mat-icon>arrow_back</mat-icon>
+                        </button>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step [optional]="true">
+                <ng-template matStepLabel>Preview</ng-template>
+                <p>Message sent!</p>
+                <div>
+                    <button mat-button matStepperPrevious>
+                        <mat-icon>arrow_back</mat-icon>
+                    </button>
+                    <br>
+                    <button mat-button (click)="stepper.reset()">
+                        <mat-icon>refresh</mat-icon>
+                    </button>
+                </div>
+        
+            </mat-step>
+        
+        </mat-horizontal-stepper>
+
+    </mat-card-content>
+</mat-card>

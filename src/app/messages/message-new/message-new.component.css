@@ -2,6 +2,11 @@
     
     margin: auto;
 }
-.mat-horizontal-stepper .full-width{
+.full-width{
     width:100%
+}
+
+.mat-card{
+    max-width: 500px;
+    margin:auto;
 }

@@ -1,7 +1,7 @@
 # ToDo
-- [ ] 1.MatStepper styling
+- [x] 1.MatStepper styling
 - [ ] 2.Have google's MaterialIcon local setup
-- [ ] 3.Adding space between inline mat-form-field
+- [x] 3.Adding space between inline mat-form-field
 # MaterialMaster
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
