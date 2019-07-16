@@ -15,13 +15,16 @@ This is having below material topics covered
 - [x] Lesson 06: Steppers
 - [x] Lesson 07: Autocomplete
 - [x] Lesson 08: Inputs
-- [ ] Lesson 09: Date picker
+- [x] Lesson 09: Date picker
 - [ ] Lesson 10: Dialogs
 - [ ] Lesson 11: Snackbars
 - [ ] Lesson 12: Tooltips
 - [ ] Lesson 13: Tables, part 1
 - [ ] Lesson 14: Tables, part 2
 - [ ] Lesson 15: Pagination
+
+## DatePicker relate pic
+![alt DatePicker](src\assets\img\DatePicker.PNG)
 
 ## Development server
 

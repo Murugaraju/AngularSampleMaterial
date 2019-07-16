@@ -1,0 +1,32 @@
+<h4 align="center">This component Orders-new is for DatePicker understanding</h4>
+<p align="center">Need to install `moment.js` library and `@angular\material-moment-adapter`</p>
+<br>
+<mat-card>
+    <mat-card-title>
+        Date Picker
+    </mat-card-title>
+    <mat-card-content>
+        <form >
+            <mat-form-field>
+                <mat-label>SimpleDate</mat-label>
+                <input matInput placeholder="SimpleDate" [matDatepicker]="simpleDate">
+                <mat-datepicker-toggle matSuffix [for]="simpleDate"></mat-datepicker-toggle>
+                <mat-datepicker #simpleDate></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field>
+                    <mat-label>Filtered Date</mat-label>
+                    <input matInput placeholder="Filtered Date" [min]="minDate" [matDatepicker]="filterDate">
+                    <mat-datepicker-toggle matSuffix [for]="filterDate"></mat-datepicker-toggle>
+                    <mat-datepicker #filterDate></mat-datepicker>
+                </mat-form-field>
+            <mat-form-field>
+                    <mat-label>Validated Date</mat-label>
+                    <input matInput placeholder="Validated Date" [min]="minDate" [matDatepicker]="validDate" [formControl]="dateCtrl">
+                    <mat-error *ngIf="dateCtrl.hasError('required')">Enter proper date mm/dd/yy required</mat-error>
+                    <mat-hint>Here installed moment.js binded with material-moment-adapter so required validator is enough for proper date format</mat-hint>
+                    <mat-datepicker-toggle matSuffix [for]="validDate"></mat-datepicker-toggle>
+                    <mat-datepicker #validDate></mat-datepicker>
+                </mat-form-field>
+        </form>
+    </mat-card-content>
+</mat-card>

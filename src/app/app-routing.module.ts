@@ -5,7 +5,7 @@ import { OrderListComponent } from './orders/order-list/order-list.component';
 import { MessageListComponent } from './messages/message-list/message-list.component';
 import { MessageNewComponent } from './messages/message-new/message-new.component';
 import {CustomerNewComponent} from './customers/customer-new/customer-new.component';
-
+import {OrderNewComponent} from './orders/order-new/order-new.component';
 const routes: Routes = [
   {
     path:'customers',
@@ -21,6 +21,11 @@ const routes: Routes = [
     path:'orders',
     // loadChildren:'./orders/orders.module#OrdersModule',
     component:OrderListComponent
+  },
+  {
+    path:'orders/new',
+    // loadChildren:'./orders/orders.module#OrdersModule',
+    component:OrderNewComponent
   },
   {
     path:'messages',

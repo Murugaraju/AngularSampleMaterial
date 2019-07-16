@@ -4,10 +4,11 @@ import { OrderListComponent } from './order-list/order-list.component';
 //material
 
 import {MatTabsModule} from '@angular/material/tabs';
+import { OrderNewComponent } from './order-new/order-new.component';
 
 
 @NgModule({
-  declarations: [OrderListComponent],
+  declarations: [OrderListComponent, OrderNewComponent],
   imports: [
     CommonModule,
     MatTabsModule

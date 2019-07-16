@@ -21,6 +21,7 @@ import {MessageNewComponent} from './messages/message-new/message-new.component'
 // import {OrdersModule} from '.orders/orders.module';
 import {MaterialModule} from './material.module';
 import { CustomerNewComponent } from './customers/customer-new/customer-new.component';
+import { OrderNewComponent } from './orders/order-new/order-new.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CustomerNewComponent } from './customers/customer-new/customer-new.comp
     CustomerInfoComponent,
     MessageNewComponent,
     CustomerNewComponent,
+    OrderNewComponent,
   ],
   imports: [
     BrowserModule,
