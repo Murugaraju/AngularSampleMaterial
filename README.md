@@ -7,7 +7,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
 This is having below material topics covered
--Lesson 01: Sidenavs
+-[]Lesson 01: Sidenavs
 Lesson 02: App bars
 Lesson 03: Menus
 Lesson 04: Tabs
