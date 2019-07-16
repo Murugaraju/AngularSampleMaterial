@@ -24,7 +24,7 @@ This is having below material topics covered
 - [ ] Lesson 15: Pagination
 
 ## DatePicker relate pic
-![alt DatePicker](.\src\assets\img\DatePicker.PNG)
+![DatePicker](src/assets/img/DatePicker.PNG)
 
 ## Development server
 
