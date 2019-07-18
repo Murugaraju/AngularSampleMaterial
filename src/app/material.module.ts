@@ -12,7 +12,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {MatDialogModule} from '@angular/material/dialog';
-import { MatRadioModule, MatSnackBarModule } from '@angular/material';
+import { MatRadioModule, MatSnackBarModule} from '@angular/material';
+import {MatTooltipModule} from '@angular/material/tooltip';
 @NgModule({
 //   declarations: [OrderListComponent],
   imports: [
@@ -27,10 +28,11 @@ import { MatRadioModule, MatSnackBarModule } from '@angular/material';
     MatMomentDateModule,
     MatDialogModule,
     MatRadioModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatTooltipModule
     
   ],
   exports:[MatTabsModule,MatCardModule,MatFormFieldModule,MatStepperModule,MatInputModule,MatAutocompleteModule,
-    MatDatepickerModule,MatMomentDateModule,MatDialogModule,MatRadioModule,MatSnackBarModule],
+    MatDatepickerModule,MatMomentDateModule,MatDialogModule,MatRadioModule,MatSnackBarModule,MatTooltipModule],
 })
 export class MaterialModule { }

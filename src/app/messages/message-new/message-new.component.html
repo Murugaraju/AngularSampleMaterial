@@ -39,7 +39,7 @@
                     </mat-form-field>
                     
                     <div>
-                        <button mat-button color="primary" matStepperNext>
+                        <button mat-button color="primary" matStepperNext matTooltip="Continue" matTooltipClass="example-tooltip">
                             <mat-icon>arrow_forward</mat-icon>
                         </button>
                     </div>
@@ -55,7 +55,7 @@
                         <input matInput placeholder="Message" formControlName="messageCtrl"  required>
                     </mat-form-field>
                     <div>
-                        <button mat-button matStepperPrevious>
+                        <button mat-button matStepperNext matTooltip="Send mail">
                             <mat-icon>mail_outline</mat-icon>
                         </button>
                         <br>
