@@ -11,7 +11,8 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatMomentDateModule} from '@angular/material-moment-adapter';
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatRadioModule } from '@angular/material';
 @NgModule({
 //   declarations: [OrderListComponent],
   imports: [
@@ -23,10 +24,12 @@ import {MatMomentDateModule} from '@angular/material-moment-adapter';
     MatStepperModule,
     MatAutocompleteModule,
     MatDatepickerModule,
-    MatMomentDateModule
+    MatMomentDateModule,
+    MatDialogModule,
+    MatRadioModule
     
   ],
   exports:[MatTabsModule,MatCardModule,MatFormFieldModule,MatStepperModule,MatInputModule,MatAutocompleteModule,
-    MatDatepickerModule,MatMomentDateModule],
+    MatDatepickerModule,MatMomentDateModule,MatDialogModule,MatRadioModule],
 })
 export class MaterialModule { }

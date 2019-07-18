@@ -16,12 +16,14 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { CustomerListComponent } from './customers/customer-list/customer-list.component';
 import { OrderListComponent } from './orders/order-list/order-list.component';
 import { MessageListComponent } from './messages/message-list/message-list.component';
-import {CustomerInfoComponent} from './customers/customer-list/customer-info/customer-info.component'
+import {CustomerInfoComponent} from './customers/customer-list/customer-info/customer-info.component';   
 import {MessageNewComponent} from './messages/message-new/message-new.component';
 // import {OrdersModule} from '.orders/orders.module';
 import {MaterialModule} from './material.module';
 import { CustomerNewComponent } from './customers/customer-new/customer-new.component';
 import { OrderNewComponent } from './orders/order-new/order-new.component';
+
+import { RepDialogComponent } from './customers/rep-dialog/rep-dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { OrderNewComponent } from './orders/order-new/order-new.component';
     MessageNewComponent,
     CustomerNewComponent,
     OrderNewComponent,
+    RepDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,7 @@ import { OrderNewComponent } from './orders/order-new/order-new.component';
     MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[RepDialogComponent]
 })
 export class AppModule { }

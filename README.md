@@ -16,7 +16,7 @@ This is having below material topics covered
 - [x] Lesson 07: Autocomplete
 - [x] Lesson 08: Inputs
 - [x] Lesson 09: Date picker
-- [ ] Lesson 10: Dialogs
+- [x] Lesson 10: Dialogs
 - [ ] Lesson 11: Snackbars
 - [ ] Lesson 12: Tooltips
 - [ ] Lesson 13: Tables, part 1

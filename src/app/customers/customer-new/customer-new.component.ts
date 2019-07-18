@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import {MatDialog} from '@angular/material';
+import {RepDialogComponent} from '../rep-dialog/rep-dialog.component';
 @Component({
   selector: 'app-customer-new',
   templateUrl: './customer-new.component.html',
@@ -7,13 +9,27 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class CustomerNewComponent implements OnInit {
   emailFormControl:FormControl;
-  constructor() { }
+  constructor(public dialog:MatDialog) { }
 
   ngOnInit() {
     this.emailFormControl=new FormControl('',[
       Validators.required,
       Validators.email
     ]);
+  }
+  openRepDialog(){
+    console.log("Hey I am clicked")
+    const dialogRef=this.dialog.open(RepDialogComponent,{
+      width:'300px',
+      // height:'300px',
+      data:{}
+    });
+    dialogRef.afterClosed().subscribe(
+      (result)=>{
+        console.log("object ",result)
+        alert('User choosed'+result)
+      }
+    )
   }
 
 }
